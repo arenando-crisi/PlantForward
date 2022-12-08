@@ -1,8 +1,126 @@
-html, body {
-  margin: 0;
-  padding: 0;
+/* -- ---- -- ---- -- ---- -- FONTS -- ---- -- ---- -- ---- -- */
+
+@font-face {
+  font-family: tiny;
+  src: url("Assets/Fonts/TINY5x3-160.woff2");
 }
 
-canvas {
-  display: block;
+@font-face {
+  font-family: whyte;
+  src: url("Assets/Fonts/Whyte\ Regular\ Italic.otf");
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: whyte;
+  src: url("Assets/Fonts/Whyte\ Regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: whyte;
+  src: url("Assets/Fonts/Whyte\ Bold.otf");
+  font-weight: bold;
+}
+
+/* -- ---- -- ---- -- ---- -- GENERAL -- ---- -- ---- -- ---- -- */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior-y: none;
+}
+
+/* -- ---- -- ---- -- ---- -- NAVBAR -- ---- -- ---- -- ---- -- */
+
+#navbar {
+  height: 100vh;
+  width: 3vw;
+  position: fixed;
+  background-color: #2aa948;
+}
+
+#titolo {
+  font-family: tiny;
+  color: #cbc9c3;
+  text-shadow: 3px 0 #3b3b3b, -3px 0 #3b3b3b, 0 3px #3b3b3b, 0 -3px #3b3b3b,
+    1.5px 1.5px #3b3b3b, -1.5px -1.5px #3b3b3b, 1.5px -1.5px #3b3b3b,
+    -1.5px 1.5px #3b3b3b;
+  font-size: 3vw;
+  position: absolute;
+  transform-origin: top left;
+  width: 30vh;
+  rotate: 270deg;
+  left: 0.45vw;
+  height: 2vw;
+  bottom: -2vh;
+  text-decoration: none;
+}
+
+.bottoncini {
+  font-family: whyte;
+  position: absolute;
+  font-weight: normal;
+  color: #3b3b3b;
+  font-size: 1.7vw;
+  transform-origin: top left;
+  left: 1.5vw;
+  rotate: 270deg;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+#intro {
+  top: 18vw;
+  transition-duration: 0.2s;
+}
+
+#intro:hover {
+  color: #cbc9c3;
+}
+
+#about {
+  top: 10vw;
+  transition-duration: 0.2s;
+}
+
+#about:hover {
+  color: #cbc9c3;
+}
+
+#switch {
+  width: 2.6vw;
+  height: 2.6vw;
+  position: absolute;
+  background-color: #cbc9c3;
+  border-radius: 3vw;
+  left: 0.2vw;
+  top: 0.2vw;
+  transition-duration: 0.2s;
+}
+
+#switch:hover {
+  background-color: #3b3b3b;
+}
+
+/* -- ---- -- ---- -- ---- -- SCROLLYTELLING -- ---- -- ---- -- ---- -- */
+
+#container {
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+  height: 100vh;
+  width: 97vw;
+  left: 3vw;
+}
+
+.b {
+  border: solid #cbc9c3 1vh;
+}
+
+.c {
+  background-color: #3b3b3b;
+  height: 98vh;
 }

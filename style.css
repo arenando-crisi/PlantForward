@@ -153,8 +153,16 @@ body {
   text-align: center;
 }
 
-canvas {
+#initialanimationcont {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.initialanimation {
   z-index: 1000;
+  position: absolute;
+  pointer-events: none;
 }
 
 /* -- ---- -- ---- -- ---- -- SCROLLITELLING -- ---- -- ---- -- ---- -- */

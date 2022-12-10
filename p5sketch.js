@@ -1,13 +1,24 @@
 let cnv;
+let img = [];
+let index;
 
 let initialanimation = function (ia) {
+  ia.preload = function () {
+    for (let i = 0; i < 180; i++) {
+      img[i] = ia.loadImage("Assets/Initialanim/" + i + ".png");
+    }
+  };
+
   ia.setup = function () {
     cnv = ia.createCanvas(ia.windowWidth, ia.windowHeight);
+    cnv.parent("initialanimationcont");
     cnv.class("initialanimation");
   };
 
   ia.draw = function () {
-    ia.ellipse(100, 100, 100);
+    ia.clear();
+    index = ia.round(ia.mouseX / (ia.windowWidth / 179));
+    ia.image(img[index], 0, 0, ia.windowHeight * 1.77, ia.windowHeight);
   };
 
   ia.windowResized = function () {

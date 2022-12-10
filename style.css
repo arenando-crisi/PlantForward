@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: whyte;
-  src: url("Assets/Fonts/Whyte\ Regular.otf");
+  src: url("Assets/Fonts/ABCWhyte-Regular.woff2");
   font-weight: normal;
 }
 
@@ -30,6 +30,15 @@ body {
   margin: 0;
   padding: 0;
   overscroll-behavior-y: none;
+  background-color: #3b3b3b;
+}
+
+.triggers {
+  width: 100vw;
+  height: 1px;
+  display: none;
+  background-color: rebeccapurple;
+  position: absolute;
 }
 
 /* -- ---- -- ---- -- ---- -- NAVBAR -- ---- -- ---- -- ---- -- */
@@ -39,6 +48,7 @@ body {
   width: 3vw;
   position: fixed;
   background-color: #2aa948;
+  left: -3vw;
 }
 
 #titolo {
@@ -65,7 +75,7 @@ body {
   color: #3b3b3b;
   font-size: 1.7vw;
   transform-origin: top left;
-  left: 1.5vw;
+  left: 0.4vw;
   rotate: 270deg;
   text-decoration: none;
   transition-duration: 0.2s;
@@ -104,7 +114,7 @@ body {
   background-color: #3b3b3b;
 }
 
-/* -- ---- -- ---- -- ---- -- SCROLLYTELLING -- ---- -- ---- -- ---- -- */
+/* -- ---- -- ---- -- ---- -- SCROLLITELLING -- ---- -- ---- -- ---- -- */
 
 #container {
   position: absolute;
@@ -112,15 +122,44 @@ body {
   flex-direction: column-reverse;
   overflow: auto;
   height: 100vh;
-  width: 97vw;
-  left: 3vw;
+  width: 100vw;
+  left: 0vw;
 }
 
-.b {
-  border: solid #cbc9c3 1vh;
-}
-
-.c {
+.pages {
   background-color: #3b3b3b;
-  height: 98vh;
+}
+
+.content {
+  height: 100vh;
+}
+
+/* -- ---- -- ---- -- ---- -- LANDING PAGE -- ---- -- ---- -- ---- -- */
+
+#firstpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#titolone {
+  font-family: tiny;
+  color: #ffffff;
+  text-shadow: 0.5vw 0 #2aa948, -0.5vw 0 #2aa948, 0 0.5vw #2aa948,
+    0 -0.5vw #2aa948, 0.25vw 0.25vw #2aa948, -0.25vw -0.25vw #2aa948,
+    0.25vw -0.25vw #2aa948, -0.25vw 0.25vw #2aa948;
+  font-size: 20vw;
+  line-height: 12vw;
+  text-align: center;
+}
+
+canvas {
+  z-index: 1000;
+}
+
+/* -- ---- -- ---- -- ---- -- SCROLLITELLING -- ---- -- ---- -- ---- -- */
+
+#tshowbar {
+  top: 0vh;
+  height: 100vh;
 }

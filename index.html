@@ -11,20 +11,42 @@
 
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
   </head>
 
   <body>
+    <!-------------------------- NAVBAR ---------------------------------------------------------------------->
     <div id="navbar">
       <a href="" id="titolo">⏩PLANT FORWARD</a>
       <a href="" class="bottoncini" id="intro">INTRO</a>
       <a href="" class="bottoncini" id="about">ABOUT</a>
       <div id="switch"></div>
     </div>
+
+    <!-------------------------- CONTAINER ---------------------------------------------------------------------->
+
     <div id="container">
-      <div class="b"><div class="c">hello 1</div></div>
-      <div class="b"><div class="c">hello 2</div></div>
-      <div class="b"><div class="c">hello 3</div></div>
+      <div class="pages">
+        <div class="content" id="firstpage">
+          <div id="titolone">
+            ⏩ PLANT<br />
+            FORWARD
+          </div>
+        </div>
+      </div>
+      <div class="pages"><div class="content"></div></div>
+      <div class="pages"><div class="content"></div></div>
+
+      <!-------------------------- SCROLLITELLING TRIGGERS ---------------------------------------------------------------------->
+
+      <div class="triggers" id="tshowbar"></div>
     </div>
-    <script src="sketch.js"></script>
+
+    <!-------------------------- SCRIPT ---------------------------------------------------------------------->
+
+    <script src="p5sketch.js"></script>
+    <script src="scrollanimations.js"></script>
   </body>
 </html>

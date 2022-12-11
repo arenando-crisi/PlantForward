@@ -1,4 +1,4 @@
-let cnv;
+/*let cnv;
 let img = [];
 let index;
 
@@ -17,8 +17,15 @@ let initialanimation = function (ia) {
 
   ia.draw = function () {
     ia.clear();
+    ia.imageMode(ia.CENTER);
     index = ia.round(ia.mouseX / (ia.windowWidth / 179));
-    ia.image(img[index], 0, 0, ia.windowHeight * 1.77, ia.windowHeight);
+    ia.image(
+      img[index],
+      ia.windowWidth / 2,
+      ia.windowHeight / 2,
+      ia.windowHeight * 1.77,
+      ia.windowHeight
+    );
   };
 
   ia.windowResized = function () {
@@ -26,4 +33,4 @@ let initialanimation = function (ia) {
   };
 };
 
-let ia = new p5(initialanimation);
+let ia = new p5(initialanimation);*/

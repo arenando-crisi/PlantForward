@@ -48,15 +48,14 @@ body {
   width: 3vw;
   position: fixed;
   background-color: #2aa948;
-  left: -3vw;
+  left: 0vw;
+  opacity: 1;
 }
 
 #titolo {
   font-family: tiny;
   color: #ffffff;
-  text-shadow: 3px 0 #3e3e3e, -3px 0 #3e3e3e, 0 3px #3e3e3e, 0 -3px #3e3e3e,
-    1.5px 1.5px #3e3e3e, -1.5px -1.5px #3e3e3e, 1.5px -1.5px #3e3e3e,
-    -1.5px 1.5px #3e3e3e;
+  -webkit-text-stroke: #3e3e3e 0.08vw;
   font-size: 3vw;
   position: absolute;
   transform-origin: top left;
@@ -66,6 +65,7 @@ body {
   height: 2vw;
   bottom: -2vh;
   text-decoration: none;
+  opacity: 0;
 }
 
 .bottoncini {
@@ -79,10 +79,11 @@ body {
   rotate: 270deg;
   text-decoration: none;
   transition-duration: 0.2s;
+  opacity: 0;
 }
 
 #intro {
-  top: 18vw;
+  top: 15vw;
   transition-duration: 0.2s;
 }
 
@@ -91,27 +92,12 @@ body {
 }
 
 #about {
-  top: 10vw;
+  top: 8vw;
   transition-duration: 0.2s;
 }
 
 #about:hover {
   color: #ffffff;
-}
-
-#switch {
-  width: 2.6vw;
-  height: 2.6vw;
-  position: absolute;
-  background-color: #ffffff;
-  border-radius: 3vw;
-  left: 0.2vw;
-  top: 0.2vw;
-  transition-duration: 0.2s;
-}
-
-#switch:hover {
-  background-color: #3e3e3e;
 }
 
 /* -- ---- -- ---- -- ---- -- SCROLLITELLING -- ---- -- ---- -- ---- -- */
@@ -123,8 +109,8 @@ body {
   overflow: auto;
   overflow-x: clip;
   height: 100vh;
-  width: 100vw;
-  left: 0vw;
+  width: 97vw;
+  left: 3vw;
 }
 
 .pages {
@@ -142,29 +128,50 @@ body {
   flex-direction: column;
   justify-content: space-around;
   background-color: #2aa948;
+  left: 0vw;
+}
+
+#coperchio1 {
+  position: absolute;
+  left: 100vw;
+  width: 97vw;
+  height: 100vh;
+  z-index: 11;
+  background-color: #ffffff;
 }
 
 #titolone {
   font-family: tiny;
   color: #ffffff;
-  text-shadow: 0.5vw 0 #3e3e3e, -0.5vw 0 #3e3e3e, 0 0.5vw #3e3e3e,
-    0 -0.5vw #3e3e3e, 0.25vw 0.25vw #3e3e3e, -0.25vw -0.25vw #3e3e3e,
-    0.25vw -0.25vw #3e3e3e, -0.25vw 0.25vw #3e3e3e;
-  font-size: 20vw;
-  line-height: 12vw;
+  font-size: 25vw;
+  line-height: 15vw;
   text-align: center;
+  -webkit-text-stroke: #3e3e3e 0.3vw;
+  position: relative;
+  top: 5vh;
+  left: -3vw;
 }
 
 #initialanimationcont {
   width: 99vw;
   height: 100vh;
   position: absolute;
+  left: -3vw;
 }
 
 .initialanimation {
-  z-index: 1000;
+  z-index: 10;
   position: absolute;
   pointer-events: none;
+}
+
+#coperchio2 {
+  position: absolute;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 11;
+  background-color: #2aa948;
 }
 
 /* -- ---- -- ---- -- ---- -- WIKIPEDIA DEFINITION -- ---- -- ---- -- ---- -- */
@@ -339,26 +346,165 @@ body {
 
 /* -- ---- -- ---- -- ---- -- IMAGES -- ---- -- ---- -- ---- -- */
 
-#imagecontainer {
+#image1 {
+  background-image: url("Assets/humans/119_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  width: 97vw;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  top: -200vh;
+  left: 5vw;
+  height: 10vw;
+  width: 10vw;
 }
 
-.image {
-  background-color: #2aa948;
-  width: 4.5vw;
-  border: #3e3e3e solid 1px;
+#image2 {
+  background-image: url("Assets/humans/134_umano.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -183vh;
+  left: 38vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image3 {
+  background-image: url("Assets/humans/136_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -193vh;
+  left: 23vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image4 {
+  background-image: url("Assets/humans/162_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -184vh;
+  left: 3vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image5 {
+  background-image: url("Assets/humans/295_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -196vh;
+  left: 83vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image6 {
+  background-image: url("Assets/humans/301_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -185vh;
+  left: 70vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image7 {
+  background-image: url("Assets/humans/324_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -192vh;
+  left: 56vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image8 {
+  background-image: url("Assets/humans/492_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -120vh;
+  left: 5vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image9 {
+  background-image: url("Assets/humans/540_umano.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -135vh;
+  left: 45vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image10 {
+  background-image: url("Assets/humans/573_umano.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -128vh;
+  left: 28vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image11 {
+  background-image: url("Assets/humans/581_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -140vh;
+  left: 65vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image12 {
+  background-image: url("Assets/humans/66_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -136vh;
+  left: 13vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image13 {
+  background-image: url("Assets/humans/68_umano.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -130vh;
+  left: 85vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#image14 {
+  background-image: url("Assets/humans/6_umano.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -122vh;
+  left: 67vw;
+  height: 10vw;
+  width: 10vw;
 }
 
 /* -- ---- -- ---- -- ---- -- TRIGGERS -- ---- -- ---- -- ---- -- */
 
 #tshowbar {
   top: 0vh;
-  height: 50vh;
+  height: 100vh;
 }
 
 #tsecondpage {

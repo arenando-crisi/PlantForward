@@ -16,7 +16,33 @@ gsap.from("#container", {
 
 //------------------------ SHOW NAVBAR ------------------------------------------------------------
 
-gsap.from("#navbar", {
+gsap.from("#titolo", {
+  scrollTrigger: {
+    scroller: "#container",
+    trigger: "#tshowbar",
+    markers: false,
+    start: "top bottom",
+    end: "bottom bottom",
+    toggleActions: "none none reverse none",
+    scrub: true,
+  },
+  opacity: 1,
+});
+
+gsap.from(".bottoncini", {
+  scrollTrigger: {
+    scroller: "#container",
+    trigger: "#tshowbar",
+    markers: false,
+    start: "top bottom",
+    end: "bottom bottom",
+    toggleActions: "none none reverse none",
+    scrub: true,
+  },
+  opacity: 1,
+});
+
+gsap.from("#coperchio1", {
   scrollTrigger: {
     scroller: "#container",
     trigger: "#tshowbar",
@@ -27,9 +53,10 @@ gsap.from("#navbar", {
     scrub: true,
   },
   left: "0vw",
+  ease: "power2.out",
 });
 
-gsap.from("#container", {
+gsap.from("#titolone", {
   scrollTrigger: {
     scroller: "#container",
     trigger: "#tshowbar",
@@ -39,8 +66,34 @@ gsap.from("#container", {
     toggleActions: "none none reverse none",
     scrub: true,
   },
-  left: "3vw",
-  width: "97vw",
+  top: "200vh",
+});
+
+gsap.from("#initialanimationcont", {
+  scrollTrigger: {
+    scroller: "#container",
+    trigger: "#tshowbar",
+    markers: false,
+    start: "top bottom",
+    end: "bottom bottom",
+    toggleActions: "none none reverse none",
+    scrub: true,
+  },
+  top: "200vh",
+});
+
+gsap.from("#coperchio2", {
+  scrollTrigger: {
+    scroller: "#container",
+    trigger: "#tshowbar",
+    markers: false,
+    start: "top bottom",
+    end: "bottom bottom",
+    toggleActions: "none none reverse none",
+    scrub: true,
+  },
+  left: "-100vw",
+  ease: "power2.out",
 });
 
 //------------------------ SCROLLITELLING ------------------------------------------------------------

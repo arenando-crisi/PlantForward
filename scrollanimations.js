@@ -4,7 +4,7 @@ gsap.from("#container", {
   scrollTrigger: {
     scroller: "#container",
     trigger: "#snapper",
-    markers: true,
+    markers: false,
     start: "top bottom",
     end: "bottom bottom",
     snap: {
@@ -20,7 +20,7 @@ gsap.from("#navbar", {
   scrollTrigger: {
     scroller: "#container",
     trigger: "#tshowbar",
-    markers: true,
+    markers: false,
     start: "top bottom",
     end: "bottom bottom",
     toggleActions: "none none reverse none",
@@ -33,7 +33,7 @@ gsap.from("#container", {
   scrollTrigger: {
     scroller: "#container",
     trigger: "#tshowbar",
-    markers: true,
+    markers: false,
     start: "top bottom",
     end: "bottom bottom",
     toggleActions: "none none reverse none",
@@ -50,7 +50,7 @@ let atxt1 = gsap
     scrollTrigger: {
       scroller: "#container",
       trigger: "#tsecondpage",
-      markers: true,
+      markers: false,
       start: "top bottom",
       end: "bottom bottom",
       toggleActions: "none none play none",
@@ -79,7 +79,7 @@ let atxt2 = gsap
     scrollTrigger: {
       scroller: "#container",
       trigger: "#tthirdpage",
-      markers: true,
+      markers: false,
       start: "top bottom",
       end: "bottom bottom",
       toggleActions: "none none play none",
@@ -89,7 +89,7 @@ let atxt2 = gsap
   .to("#human", { top: "0vh", duration: 0.7 })
   .to("#a1txt1", { top: "0vh", duration: 0.7 }, "<")
   .to("#human", { color: "#2aa948", duration: 0.7 }, "<1")
-  .to("#a1txt1", { top: "-10vh", duration: 0.7 }, "<2")
+  .to("#a1txt1", { top: "-10vh", duration: 0.7 }, "<1")
   .to("#a2txt1", { top: "0vh", duration: 0.7 }, "<0.5")
   .to("#a2txt1", { top: "-10vh", duration: 0.7 }, "<2")
   .to("#a3txt1", { top: "0vh", duration: 0.7 }, "<")
@@ -98,3 +98,28 @@ let atxt2 = gsap
   .to("#a4txt1", { top: "-20vh", duration: 0.7 }, "<2")
   .to("#human", { top: "-10vh", duration: 0.7 }, "<0.5")
   .to("#a5txt1", { top: "0vh", duration: 0.7 }, "<0.5");
+
+let atxt3 = gsap
+  .timeline({
+    scrollTrigger: {
+      scroller: "#container",
+      trigger: "#tfourthpage",
+      markers: false,
+      start: "top bottom",
+      end: "bottom bottom",
+      toggleActions: "none none play none",
+      scrub: false,
+    },
+  })
+  .to("#atxt5", 0, {
+    top: "0vh",
+    duration: 0.7,
+  })
+  .to("#atxt6", 0.1, {
+    top: "0vh",
+    duration: 0.7,
+  })
+  .to("#atxt7", 0.2, {
+    top: "0vh",
+    duration: 0.7,
+  });

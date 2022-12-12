@@ -29,8 +29,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overscroll-behavior-y: none;
-  background-color: #3b3b3b;
+  overscroll-behavior: none;
+  background-color: #ffffff;
 }
 
 .triggers {
@@ -53,10 +53,10 @@ body {
 
 #titolo {
   font-family: tiny;
-  color: #cbc9c3;
-  text-shadow: 3px 0 #3b3b3b, -3px 0 #3b3b3b, 0 3px #3b3b3b, 0 -3px #3b3b3b,
-    1.5px 1.5px #3b3b3b, -1.5px -1.5px #3b3b3b, 1.5px -1.5px #3b3b3b,
-    -1.5px 1.5px #3b3b3b;
+  color: #ffffff;
+  text-shadow: 3px 0 #3e3e3e, -3px 0 #3e3e3e, 0 3px #3e3e3e, 0 -3px #3e3e3e,
+    1.5px 1.5px #3e3e3e, -1.5px -1.5px #3e3e3e, 1.5px -1.5px #3e3e3e,
+    -1.5px 1.5px #3e3e3e;
   font-size: 3vw;
   position: absolute;
   transform-origin: top left;
@@ -72,7 +72,7 @@ body {
   font-family: whyte;
   position: absolute;
   font-weight: normal;
-  color: #3b3b3b;
+  color: #3e3e3e;
   font-size: 1.7vw;
   transform-origin: top left;
   left: 0.4vw;
@@ -87,7 +87,7 @@ body {
 }
 
 #intro:hover {
-  color: #cbc9c3;
+  color: #ffffff;
 }
 
 #about {
@@ -96,14 +96,14 @@ body {
 }
 
 #about:hover {
-  color: #cbc9c3;
+  color: #ffffff;
 }
 
 #switch {
   width: 2.6vw;
   height: 2.6vw;
   position: absolute;
-  background-color: #cbc9c3;
+  background-color: #ffffff;
   border-radius: 3vw;
   left: 0.2vw;
   top: 0.2vw;
@@ -111,7 +111,7 @@ body {
 }
 
 #switch:hover {
-  background-color: #3b3b3b;
+  background-color: #3e3e3e;
 }
 
 /* -- ---- -- ---- -- ---- -- SCROLLITELLING -- ---- -- ---- -- ---- -- */
@@ -121,13 +121,14 @@ body {
   display: flex;
   flex-direction: column-reverse;
   overflow: auto;
+  overflow-x: clip;
   height: 100vh;
   width: 100vw;
   left: 0vw;
 }
 
 .pages {
-  background-color: #3b3b3b;
+  background-color: #ffffff;
 }
 
 .content {
@@ -140,22 +141,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #2aa948;
 }
 
 #titolone {
   font-family: tiny;
   color: #ffffff;
-  text-shadow: 0.5vw 0 #2aa948, -0.5vw 0 #2aa948, 0 0.5vw #2aa948,
-    0 -0.5vw #2aa948, 0.25vw 0.25vw #2aa948, -0.25vw -0.25vw #2aa948,
-    0.25vw -0.25vw #2aa948, -0.25vw 0.25vw #2aa948;
+  text-shadow: 0.5vw 0 #3e3e3e, -0.5vw 0 #3e3e3e, 0 0.5vw #3e3e3e,
+    0 -0.5vw #3e3e3e, 0.25vw 0.25vw #3e3e3e, -0.25vw -0.25vw #3e3e3e,
+    0.25vw -0.25vw #3e3e3e, -0.25vw 0.25vw #3e3e3e;
   font-size: 20vw;
   line-height: 12vw;
   text-align: center;
 }
 
 #initialanimationcont {
-  width: 100%;
-  height: 100%;
+  width: 99vw;
+  height: 100vh;
   position: absolute;
 }
 
@@ -170,7 +172,7 @@ body {
 #wikidef {
   font-family: whyte;
   font-weight: normal;
-  color: #cbc9c3;
+  color: #3e3e3e;
   font-size: 2.6vw;
   width: 74vw;
   position: absolute;
@@ -214,7 +216,7 @@ body {
 #phrase1 {
   font-family: whyte;
   font-weight: normal;
-  color: #cbc9c3;
+  color: #3e3e3e;
   font-size: 2.6vw;
   width: 74vw;
   position: absolute;
@@ -232,7 +234,7 @@ body {
   top: 10vw;
   width: 74vw;
   text-align: center;
-  color: #cbc9c3;
+  color: #3e3e3e;
   z-index: 10;
 }
 
@@ -302,6 +304,56 @@ body {
   top: 30vh;
 }
 
+/* -- ---- -- ---- -- ---- -- PHRASE 2 -- ---- -- ---- -- ---- -- */
+
+#google {
+  font-family: whyte;
+  font-weight: normal;
+  color: #3e3e3e;
+  font-size: 2.6vw;
+  width: 74vw;
+  position: absolute;
+}
+
+#fourthpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#atxt5 {
+  position: relative;
+  top: 5vw;
+}
+
+#atxt6 {
+  position: relative;
+  top: 5vw;
+}
+
+#atxt7 {
+  position: relative;
+  top: 5vw;
+}
+
+/* -- ---- -- ---- -- ---- -- IMAGES -- ---- -- ---- -- ---- -- */
+
+#imagecontainer {
+  position: absolute;
+  width: 97vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image {
+  background-color: #2aa948;
+  width: 4.5vw;
+  border: #3e3e3e solid 1px;
+}
+
 /* -- ---- -- ---- -- ---- -- TRIGGERS -- ---- -- ---- -- ---- -- */
 
 #tshowbar {
@@ -315,6 +367,10 @@ body {
 
 #tthirdpage {
   top: -90vh;
+}
+
+#tfourthpage {
+  top: -190vh;
 }
 
 #snapper {
